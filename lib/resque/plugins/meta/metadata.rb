@@ -1,4 +1,5 @@
 require 'time'
+require 'active_support/core_ext/string/inflections'
 
 module Resque
   module Plugins
@@ -13,7 +14,7 @@ module Resque
           @enqueued_at = from_time_format_str('enqueued_at')
           @job_class = data_hash['job_class']
           if @job_class.is_a?(String)
-            @job_class = Resque.constantize(data_hash['job_class'])
+            @job_class = data_hash['job_class'].constantize
           else
             data_hash['job_class'] = @job_class.to_s
           end
