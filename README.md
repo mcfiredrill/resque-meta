@@ -1,9 +1,9 @@
 Resque Meta
 ===========
 
-[![Build Status](https://secure.travis-ci.org/lmarlow/resque-meta.png)](http://travis-ci.org/lmarlow/resque-meta)
+[![Build Status](https://img.shields.io/travis/lmarlow/resque-meta.svg)](http://travis-ci.org/lmarlow/resque-meta)
 
-A [Resque][rq] plugin. Requires Resque 1.8 and Redis 2+.
+A [Resque][qq] plugin. Requires Resque 1.8 and Redis 2+.
 
 If you want to be able to add metadata for a job
 to track anything you want, extend it with this module.
